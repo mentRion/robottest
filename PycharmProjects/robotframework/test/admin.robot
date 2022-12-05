@@ -6,17 +6,13 @@ Library  DateTime
 
 
 *** Variables ***
-${url}  http://127.0.0.1:8000/bhcadmin/
-
-
-
-*** Keywords ***
+${url}  http://brgysanjose.gocenter.online/bhcadmin/
 
 
 
 *** Test Cases ***
 Web Health Center Info System Admin
-    Open Browser                        http://brgysanjose.gocenter.online/bhcadmin/  Chrome
+    Open Browser                        ${url}  Chrome
     Wait Until Element Is Visible       id:email  timeout=5
 
 
@@ -44,34 +40,34 @@ Documents
 
 
 
-Record for Morbidity
+Documents - Record for Morbidity
     Click Element    xpath://div/div[2]/div
 
-Click Add
+Documents - Click Add
     Click Element  xpath=//span[contains(.,'add_box')]
 
-Type First Name
+Documents - Type First Name
     Input Text  id=id_first_name   test
 
-Type Second Name
+Documents - Type Second Name
     Input Text  id=id_last_name  test
 
-Click Submit
+Documents - Click Submit
     Click Element  xpath=//button[contains(.,'Submit')]
 
-Click Edit
+Documents - Click Edit
     Click Element  xpath=//span[contains(.,'edit')]
 
-Click Submit
+Documents - Click Submit
     Click Element  xpath=//button[contains(.,'Submit')]
 
-Click Delete
+Documents - Click Delete
     Click Element  xpath=//span[contains(.,'delete')]
 
-Click Yes
+Documents - Click Yes
     Click Element  xpath=//input[2]
 
-Record for Morbidity - Back document
+Documents - Record for Morbidity - Back document
     Click Element    xpath://span[contains(.,'arrow_back')]
 
 
@@ -80,38 +76,38 @@ Record for Morbidity - Back document
 Child Masterlist
     Click Element    xpath://div/div[2]/div/div/div[2]/div
 
-Click the Plus
+Child Masterlist - Click the Plus
     Click Element  xpath=//a[2]/span
 
-Type First Name
+Child Masterlist - Type First Name
     Input Text  id=id_first_name  test
 
-Type Second Name
+Child Masterlist - Type Second Name
     Input Text  id=id_last_name  test
 
-Click Submit
+Child Masterlist - Click Submit
     Wait Until Element Is Visible     xpath=//div/button
     Click Element  xpath=//div/button
 
-Click the Eye
+Child Masterlist - Click the Eye
     Click Element  xpath=//td[4]/a/span
 
-Click Edit
+Child Masterlist - Click Edit
     Click Element  xpath=//a[2]/span
 
-Click Submit
+Child Masterlist - Click Submit
    Click Element  xpath=//div/button
 
-Click the Eye
+Child Masterlist - Click the Eye
     Click Element  xpath=//td[4]/a/span
 
-Click the Trash
+Child Masterlist - Click the Trash
     Click Element  xpath=//a[3]/span
 
-Click Yes to Confirm
+Child Masterlist - Click Yes to Confirm
     Click Element  xpath=//input[2]
 
-Back
+Child Masterlist - Back
     Click Element    xpath://span[contains(.,'arrow_back')]
 
 
@@ -124,31 +120,31 @@ Back
 Visit Log Book
     Click Element    xpath://div[2]/div/div/div/div[2]/div/p
 
-Click Add visit log book
+Visit Log Book - Click Add visit log book
     Click Element  xpath=//a[2]/span
 
-Click the Text Box
+Visit Log Book - Click the Text Box
     Click Element  id=id_name
 
-Type the Name of the Log Book
+Visit Log Book - Type the Name of the Log Book
     Input Text  xpath=//div[2]/input   name
 
-Click Submit
+Visit Log Book - Click Submit
     Click Element  xpath=//div/button
 
-Click Edit Log Book
+Visit Log Book - Click Edit Log Book
     Click Element  xpath=//div[2]/div/a[3]/span
 
-Submit the New Name
+Visit Log Book - Submit the New Name
     Click Element  xpath=//div/button
 
-Delete the Log Book
+Visit Log Book - Delete the Log Book
     Click Element  xpath=//a[4]/span
 
-Yes Delete the Log Book
+Visit Log Book - Yes Delete the Log Book
     Click Element  xpath=//input[2]
 
-Back
+Visit Log Book - Back
     Click Element    xpath://span[contains(.,'arrow_back')]
 
 
@@ -161,34 +157,34 @@ Back
 Pregnancy Form
     Click Element    xpath://h5[contains(.,'Masterlist for Pregnancy and Newborn Baby')]
 
-Click the Add New Form
+Pregnancy Form - Click the Add New Form
     Click Element  xpath=//a[2]/span
 
-Type the First Name
+Pregnancy Form - Type the First Name
     Input Text  id=id_first_name  test
 
-Type the Second Name
+Pregnancy Form - Type the Second Name
     Input Text  id=id_last_name  test
 
-Click Submit to Add
+Pregnancy Form - Click Submit to Add
     Click Element  xpath=//form/button
 
-View Individual Form
+Pregnancy Form - View Individual Form
     Click Element  xpath=//td[5]/a/span
 
-Click Edit Form
+Pregnancy Form - Click Edit Form
     Click Element  xpath=//a[2]/span
 
-Click Submit
+Pregnancy Form - Click Submit
     Click Element  xpath=//div/button
 
-Click the Delete Form
+Pregnancy Form - Click the Delete Form
     Click Element  xpath=//a[3]/span
 
-Click Yes to Confirm
+Pregnancy Form - Click Yes to Confirm
     Click Element  xpath=//input[2]
 
-Back
+Pregnancy Form - Back
     Click Element    xpath://span[contains(.,'arrow_back')]
 
 
@@ -201,37 +197,37 @@ Back
 Itr Checkup Masterlist
     Click Element    xpath://div[3]/div[2]/div/div/div[2]/div
 
-Click the Plus to Add
+Itr Checkup Masterlist - Click the Plus to Add
     Click Element   xpath=//a[2]/span
 
-Type First Name
+Itr Checkup Masterlist - Type First Name
     Input Text   xpath=//div[2]/div[2]/input  test
 
-Type the Second Name
+Itr Checkup Masterlist - Type the Second Name
     Input Text   xpath=//div[3]/div[2]/input  test
 
-Submit
+Itr Checkup Masterlist - Submit
     Click Element  xpath=//div/button
 
-View Individual Form
+Itr Checkup Masterlist - View Individual Form
     Click Element  xpath=//td[3]/a/span
 
-Click Update
+Itr Checkup Masterlist - Click Update
     Click Element  xpath=//a[2]/span
 
-Click Submit to Confirm
+Itr Checkup Masterlist - Click Submit to Confirm
     Click Element  xpath=//div/button
 
-Click View Individual
+Itr Checkup Masterlist - Click View Individual
     Click Element  xpath=//td[3]/a/span
 
-Click Delete
+Itr Checkup Masterlist - Click Delete
     Click Element  xpath=//a[3]/span
 
-Click Yes to Confirm
+Itr Checkup Masterlist - Click Yes to Confirm
     Click Element  xpath=//input[2]
 
-Back
+Itr Checkup Masterlist - Back
     Click Element    xpath://span[contains(.,'arrow_back')]
 
 
@@ -245,34 +241,34 @@ Back
 Itr for Widowed
     Click Element    xpath://div[4]/div/div/div/div[2]/div/p/small
 
-Click the Plus Sign to Add
+Itr for Widowed - Click the Plus Sign to Add
     Click Element   xpath=//a[2]/span
 
-Type the First Name
+Itr for Widowed - Type the First Name
     Input Text   id=id_first_name  test
 
-Type the Second Name
+Itr for Widowed - Type the Second Name
     Input Text   id=id_last_name  test
 
-Click Submit to Add
+Itr for Widowed - Click Submit to Add
     Click Element  xpath=//div/button
 
-View Specific Form
+Itr for Widowed - View Specific Form
     Click Element  xpath=//td[6]/a/span
 
-Click the Edit to Change
+Itr for Widowed - Click the Edit to Change
     Click Element  xpath=//a[2]/span
 
-Click Submit
+Itr for Widowed - Click Submit
     Click Element  xpath=//div/button
 
-Click Delete
+Itr for Widowed - Click Delete
     Click Element  xpath=//a[3]/span
 
-Click Yes to Confirm Deletion
+Itr for Widowed - Click Yes to Confirm Deletion
     Click Element  xpath=//input[2]
 
-Back
+Itr for Widowed - Back
     Click Element    xpath://span[contains(.,'arrow_back')]
 
 
@@ -282,19 +278,19 @@ Back
 Appointments
     Click Element    xpath://li[4]/a
 
-Click All Appointment to Load
+Appointments - Click All Appointment to Load
     Click Element   xpath=//li/button
 
-Click Pending Appointment to Load all Pending Appointment
+Appointments - Click Pending Appointment to Load all Pending Appointment
     Click Element   xpath=//li[2]/button
 
-Click Ongoing Appointment to Load all Ongoing Appointment
+Appointments - Click Ongoing Appointment to Load all Ongoing Appointment
     Click Element   xpath=//li[3]/button
 
-Click Done Appointment to Load the List of Finished Appointment
+Appointments - Click Done Appointment to Load the List of Finished Appointment
     Click Element   xpath=//li[4]/button
 
-Click Rejected Appointment to Load the List of Rejected
+Appointments - Click Rejected Appointment to Load the List of Rejected
     Click Element   xpath=//li[5]/button
 
 
@@ -305,37 +301,37 @@ Click Rejected Appointment to Load the List of Rejected
 Medicine
     Click Element    xpath://li[5]/a
 
-Click Add Medicine
+Medicine - Click Add Medicine
     Input Text  xpath=//div[2]/div/div/a/span   dawdawd
 
-Type the Name
+Medicine - Type the Name
     Input Text  id=id_name  dawd
 
-Type Class of Medicine
+Medicine - Type Class of Medicine
     Input Text  id=id_type   dsadas
 
-Type the Description of the Medicine
+Medicine - Type the Description of the Medicine
     Input Text  id=id_description   dwa
 
-Select the Expiry Date of the Medicine
+Medicine - Select the Expiry Date of the Medicine
     Input Text  id=id_expiration_date  2022-11-18
 
-Type the Number of Stock
+Medicine - Type the Number of Stock
     Input Text  id=id_stock  12
 
-Submit to Add the Medicine
+Medicine - Submit to Add the Medicine
     Click Element  xpath=//div/button
 
-Click Edit
+Medicine - Click Edit
     Click Element  xpath=//a[2]/span
 
-Click Cancel
+Medicine - Click Cancel
     Click Element  xpath=//div[7]/div/a
 
-Click Delete
+Medicine - Click Delete
     Click Element  xpath=//a[3]/span
 
-Click Yes to Confirm
+Medicine - Click Yes to Confirm
     Click Element  xpath=//input[2]
 
 
@@ -344,22 +340,22 @@ Click Yes to Confirm
 Schedules
     Click Element    xpath://li[6]/a
 
-Click the Plus Sign to Add Schedule
+Schedules - Click the Plus Sign to Add Schedule
     Click Element  xpath=//div[2]/div/div/a/span
 
-Type the First Name
+Schedules - Type the First Name
     Input Text   id=id_first_name   dawd
 
-Type the Last Name
+Schedules - Type the Last Name
     Input Text   id=id_last_name   daw
 
-Select the Starting Time of Work
+Schedules - Select the Starting Time of Work
     Input Text   id=id_work_time_from   03:13
 
-Select the Ending Time of Work
+Schedules - Select the Ending Time of Work
     Input Text   id=id_work_time_to   03:13
 
-Click Cancel
+Schedules - Click Cancel
     Click Element  xpath=//form/a
 
 
@@ -368,19 +364,19 @@ Click Cancel
 Feed
     Click Element    xpath://li[7]/a
 
-Click the Add
+Feed - Click the Add
     Click Element   xpath=//div[2]/div/div/a/span
 
-Type Feed the Title
+Feed - Type Feed the Title
     Input Text   xpath=//div[2]/input  dawd
 
-Type Content
+Feed - Type Content
     Input Text   xpath=//textarea  dwadaw
 
-Select Image
+Feed - Select Image
     Input Text   xpath=//div[3]/div[2]/input  C:\downloads\postgresql[2].png
 
-Click Submit
+Feed - Click Submit
     Click Element   xpath=//div/button
 
 
@@ -390,13 +386,13 @@ Click Submit
 QA
     Click Element    xpath://li[8]/a
 
-Click Message Icon
+QA - Click Message Icon
     Click Element     xpath=//i
 
-Type Message
+QA - Type Message
     Input Text    id=floatingTextarea    text
-    
-Click Send Icon to Show
+
+QA - Click Send Icon to Show
     Click Element    xpath=//i
 
 
@@ -406,55 +402,47 @@ Click Send Icon to Show
 Archive
     Click Element    xpath://span[contains(.,'Archive')]
 
-Click Medicine Archive
+Archive - Click Medicine Archive
     Click Element   xpath=//div[2]/div/ul/li/a
 
-Click Schedule Archive to Show
+Archive - Click Schedule Archive to Show
     Click Element   xpath=//div[2]/div/ul/li[2]/a
 
-Click Feed Archive to Show
+Archive - Click Feed Archive to Show
     Click Element   xpath=//div[2]/div/ul/li[3]/a
 
-Click Morbidity Archive to Show
+Archive - Click Morbidity Archive to Show
     Click Element   xpath=//a[contains(.,'Morbidity')]
 
-Click Child Masterlist to Show
+Archive - Click Child Masterlist to Show
     Click Element   xpath=//div[2]/div/ul/li[5]/a
 
-Click Visit Log Book to Show
+Archive - Click Visit Log Book to Show
     Click Element   xpath=//div[2]/div/ul/li[6]/a
 
-Click Antigen Form to Show
+Archive - Click Antigen Form to Show
     Click Element   xpath=//div[2]/div/ul/li[7]/a
 
-Click Masterlist Pregnancy and Newborn to Show
+Archive - Click Masterlist Pregnancy and Newborn to Show
     Click Element   xpath=//div[2]/div/ul/li[8]/a
 
-Click ITR Check Up Masterlist to Show all Check ups
+Archive - Click ITR Check Up Masterlist to Show all Check ups
     Click Element   xpath=//div[2]/div/ul/li[9]/a
 
-Click ITR for Widowed to Show
+Archive - Click ITR for Widowed to Show
     Click Element   xpath=//li[10]/a
 
-Click Child Masterlist to Show
+Archive - Click Child Masterlist to Show
     Click Element   xpath=//div[2]/div/ul/li[5]/a
 
-Select Item to Restore
+Archive - Select Item to Restore
     Click Element   xpath=//input
 
-Click Restore
+Archive - Click Restore
     Click Element   xpath=//form/button
 
-Click Yes to Confirm
+Archive - Click Yes to Confirm
     Click Element   xpath=//div[3]/button
-
-
-
-
-
-
-
-
 
 
 
